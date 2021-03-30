@@ -1,0 +1,196 @@
+body {
+    background-color: #F2EFEA;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+    border: none;
+    outline: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  cursor: pointer;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.top-bar {
+    background-color: #95B2B8;
+    padding: 1rem;
+    display:flex;
+    align-items:center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: 5rem;
+  float: left;
+}
+
+h1#header {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+  td {
+    background-color: #95B2B8;
+    font-size: 2.5rem;
+    padding: 1rem 4rem 1rem 4rem;
+    font-weight: 500;
+    display: inline-block;
+    border: 0.25rem solid #3D3B3C;
+    box-sizing: border-box;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25), inset 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .points-header {
+    font-weight: 100;
+    margin-block: 0;
+    margin-top: 1.5rem;
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color:#95B2B8;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .navlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1.5;
+    min-width: 3.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;   
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+  }
+
+  .navlink:hover {
+    background-color: #5a7c83;
+  }
+
+  .navlink--active {
+    color: black;
+  }
+
+  .nav-img {
+    width: 3rem;
+  }
+
+  .flag {
+    width: 2rem;
+  }
+
+  #modalOpen {
+    float: right;
+    margin: 5% 20% 5% 0%;
+  }
+
+  hr {
+    background: #3D3B3C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3.125rem;
+    width: 75%;
+    height: 0.25rem;
+    margin-top: 3rem;
+  }
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 33%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.1); 
+  }
+
+  .modal-header {
+    margin-top: 2.1rem;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    color: #5C5955;
+    margin: auto;
+    padding: 1.25rem;
+    border: 1px solid #888;
+    width: 70%;
+    position: relative;
+    animation: animatetop 10s;
+    
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.penalties {
+  line-height: 2.5rem;
+}
+
+li {
+  display:block
+}
+
+
+ 
+

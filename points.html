@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="main/css.css">
+    <title>RC South Coast</title>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="images/logo.png" class="logo">
+
+        <h1 id="header">RC South Coast Crawlers</h1>
+    </div>
+
+    <div class="content">
+
+      <table>
+        <tr>
+          <th>
+            <h1 class="points-header">Points</h1>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <div id="score">000</div>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <span class="material-icons-outlined" id="modalOpen">
+      help_outline
+      </span>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-header">Points & Penalties</h2>
+
+          <p class="penalties">
+            ● Reverse: No Penalty <br>
+            ● Hit Gate Marker: +10 <br> 
+            ● Rollover: +5 <br>
+            ● Boundary: +5 <br>
+            ● Vehicle Reposition: +5 <br>
+            ● Use of Winch: +1 <br>
+            ● Hand Winch: +5 <br>
+            ● Did Not Finish (DNF): +100 <br>
+            ● Did Not Start (DNS): +20 
+          </p>            
+           
+
+          </div>
+    </div>
+
+    <hr>
+
+    <ul> 
+      <li>
+      <p class="penalty-name">Reverse</p>
+      <span class="material-icons-outlined" onclick="raisecount()">
+      add_circle_outline
+      </span>
+
+      <span class="material-icons-outlined" onclick="lowercount()">
+      remove_circle_outline
+      </span>
+      </li>
+
+      <li>
+      <p class="penalty-name">Hit Marker</p>
+      <span class="material-icons-outlined" onclick="raisecount()">
+      add_circle_outline
+      </span>
+    
+      <span class="material-icons-outlined" onclick="lowercount()">
+      remove_circle_outline
+      </span>
+      </li>
+
+      <li>
+        <p class="penalty-name">Roll Over</p>
+        <span class="material-icons-outlined" onclick="raisecount()">
+        add_circle_outline
+        </span>
+      
+        <span class="material-icons-outlined" onclick="lowercount()">
+        remove_circle_outline
+        </span>
+        </li>
+
+    </ul>
+
+    <nav class="nav">
+        <a href="points.html" class="navlink">
+          <img src="images/points.png" alt="" class="nav-img">
+        </a>
+        <a href="leaderboard.html" class="navlink">
+            <img src="images/flag.png" alt="" class="flag">
+        </a>
+        <a href="settings.html" class="navlink">
+          <img src="images/setting.png" alt="" class="nav-img">
+        </a>
+      </nav>
+
+      <script src="main/points.js"></script>
+
+</body>
+</html>
