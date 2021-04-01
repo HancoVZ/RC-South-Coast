@@ -187,8 +187,13 @@ h1#header {
   line-height: 2.5rem;
 }
 
+.penalty-name {
+  font-size: 1.3rem;
+  display: contents;
+}
+
 li {
-  display:block
+  display: flex;
 }
 
 

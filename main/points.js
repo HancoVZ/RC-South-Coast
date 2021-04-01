@@ -12,30 +12,33 @@ span.onclick = function() {
 }
 
 
-var raise=(function () {
+let raiseReverse = document.getElementById('raiseHit');
+let lowerReverse = document.getElementById('lowerHit');
+let raiseHit = document.getElementById('raiseRoll');
+let lowerHit = document.getElementById('lowerRoll');
 
-var counter = 0;
-return function () {return counter +=100;}
+let int = document.getElementById('score');
+let integer = 000;
+
+raiseRoll.addEventListener('click',function(){
+  integer +=5;
+  int.innerHTML = integer;
+})
+
+lowerRoll.addEventListener('click',function(){
+  integer -=5;
+  int.innerHTML = integer;
+})
+
+raiseHit.addEventListener('click',function(){
+  integer +=10;
+  int.innerHTML = integer;
+})
+
+lowerHit.addEventListener('click',function(){
+  integer -=10;
+  int.innerHTML = integer;
+})
 
 
-
-})();
-
-function raisecount (){
-
-document.getElementById("score").innerHTML = raise ();
-
-}
-
-var lower=(function () {
-
-    var counter = 0;
-    return function () {return counter -=100;}
-
-})();
-
-function lowercount (){
-
-    document.getElementById("score").innerHTML = lower ();
-}
 
