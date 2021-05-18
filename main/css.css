@@ -37,6 +37,10 @@ body {
   font-feature-settings: 'liga';
 }
 
+.icons {
+  display: block;
+}
+
 .top-bar {
     background-color: #95B2B8;
     padding: 1rem;
